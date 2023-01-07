@@ -107,6 +107,11 @@
   [text]
   (str "\n> " (join "\n> " (split-lines text)) \newline))
 
+(defn spoiler
+  "Return the given text with ||verticalbar||."
+  [text]
+  (str "||" text "||"))
+
 (def full-block-quote
   "The full block quote (`>>>`).
 
